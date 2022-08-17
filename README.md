@@ -38,5 +38,5 @@ mongodex.migrate("<DATABASE_URI>", collections)
 You can also create a markdown file with all your indexes using the same collection index dictionary mentioned in the previous topic. For example:
 
 ```python
-mongodex.md_generator(collenctions)
+mongodex.md_generator(collections)
 ```
