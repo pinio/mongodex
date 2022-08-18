@@ -72,12 +72,12 @@ class Index:
                 comment=other.get("comment", ""),
                 unique=other.get("unique", False),
                 sparse=other.get("sparse", False),
-                partial=other.get("partialFilterExpression", None),
-                expire=other.get("expireAfterSeconds", None),
+                partial=other.get("partialFilterExpression"),
+                expire=other.get("expireAfterSeconds"),
                 geosphere_index_version=other.get("2dsphereIndexVersion", 2),
                 language_override=other.get("language_override", "language"),
                 text_index_version=other.get("textIndexVersion", 3),
-                weights=other.get("weights", None),
+                weights=other.get("weights"),
             )
         # Comment is not considered, since pymongo doesn't support it yet
         conditionals = (
